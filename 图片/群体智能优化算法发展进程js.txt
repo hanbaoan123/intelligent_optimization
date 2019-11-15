@@ -1,0 +1,90 @@
+Highcharts.chart('container', {
+	chart: {
+		type: 'timeline'
+	},
+	xAxis: {
+		visible: false
+	},
+	yAxis: {
+		visible: false
+	},
+	title: {
+		text: '群体智能优化算法发展进程'
+	},
+	subtitle: {
+		text: ''
+	},
+	//去除水印
+	credits : {
+		enabled : false
+	},
+	colors: [
+		'#4185F3',
+		'#4185F3',
+		'#427CDD',
+		'#427CDD',
+		'#406AB2',
+		'#406AB2',
+		'#3E5A8E',
+		'#3E5A8E',
+		'#3B4A68',
+		'#3B4A68',
+		'#363C46',
+		'#363C46',
+		'#363C22'
+	],
+	plotOptions: {
+		series: {
+			dataLabels: {
+				enabled: true,
+				style: {
+					fontWeight: 'bold',
+					fontSize: '6px',
+					color: 'red'
+				}
+			}
+		}
+	},
+	series: [{
+		data: [{
+			name: '蚁群优化（ACO）',
+			label: '1992:Marco Dorigo'
+		},{
+			name: '粒子群优化（PSO）',
+			label: '1995：James Kennedy和Russell Eberhart'
+		}, {
+			name: '人工鱼群算法（AFSA）',
+			label: '2002: Li Xiao-lei'
+		},  {
+			name: '细菌觅食优化算法（BFOA）',
+			label: '2002: Passino'
+		},{
+			name: '人工蜂群（ABC）',
+			label: '2005: Karaboga'
+		}, {
+			name: '猫群算法（CSO）',
+			label: '2006: Shu-An Chu'
+		},{
+			name: '萤火虫群优化（GSO）',
+			label: '2005: Krishnanand和Ghose'
+		},{
+			name: '蟑螂群优化（CSO）',
+			label: '2008：CHENG LE'
+		},{
+			name: '布谷鸟搜索（CS）',
+			label: '2009：Xin-She Yang和Suash Deb'
+		}, {
+			name: '萤火虫算法（FA）',
+			label: '2009：Xin-She Yang'
+		},{
+			name: '蝙蝠算法（BA）',
+			label: '2010：Xin-She Yang'
+		},{
+			name: '烟花算法（FWA）',
+			label: '2010：谭营'
+		},{
+			name: '蜘蛛猴优化（SMO）',
+			label: '2014：Jagdish Chand Bansal'
+		}]
+	}]
+});
