@@ -1,2 +1,5 @@
 /*.cfg
 /图片/果蝇优化/*.cfg
+/media/*.cfg
+*.cfg
+/*.~$lock
